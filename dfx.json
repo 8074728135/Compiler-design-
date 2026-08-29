@@ -1,0 +1,24 @@
+{
+  "canisters": {
+    "flowsync_backend": {
+      "type": "motoko",
+      "main": "src/backend/Main.mo"
+    },
+    "flowsync_frontend": {
+      "type": "assets",
+      "dependencies": [
+        "flowsync_backend"
+      ],
+      "source": [
+        "dist"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
